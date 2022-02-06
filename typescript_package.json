@@ -1,0 +1,50 @@
+[
+  {
+    "type": "folder",
+    "name": "npm_scripts",
+    "sub": [{
+      "type": "template",
+      "repo": "git@github.com:almaclaine/npm_scripts"
+    }]
+  },
+  {
+    "type": "template",
+    "repo": "git@github.com:almaclaine/almaclaine-package-mono-repo",
+    "folder": "packages/ts-config/blox"
+  },
+  {
+    "type": "template",
+    "repo": "git@github.com:almaclaine/gitignores",
+    "files": [{
+      "path": ".gitignore.node",
+      "rename": ".gitignore.base"
+    }]
+  },
+  {
+    "type": "template",
+    "repo": "git@github.com:almaclaine/almaclaine-package-mono-repo",
+    "folder": "packages/rollup-config/blox",
+    "files": [{
+      "path": "rollup.config.script.js",
+      "rename": "rollup.config.js"
+    }]
+  },
+  {
+    "type": "template",
+    "repo": "git@github.com:almaclaine/almaclaine-package-mono-repo",
+    "folder": "packages/eslint-config/blox",
+    "files": [{
+      "path": ".eslintrc.typescript.js",
+      "rename": ".eslintrc.js"
+    }]
+  },
+  {
+    "type": "template",
+    "repo": "git@github.com:almaclaine/almaclaine-package-mono-repo",
+    "folder": "packages/jest-config/blox",
+    "files": [{
+      "path": "typescript.jest.config.js",
+      "rename": "jest.config.js"
+    }]
+  }
+]
